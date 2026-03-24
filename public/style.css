@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color:#171a21;
+    color:#c7d5e0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background-color: #1b2838;
+    align-items: center;
+}
+
+.navegacao{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+#titulo{
+    height: 100px;
+    width: 100px;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #2a475e;
+    color: #c7d5e0;
+}
+
+button{
+    background-color:#2a475e;
+    border: none;
+    color:#c7d5e0;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:#66c0f4;
+    color:#171a21;
+}
+
+.main{
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.bannersrotativos{
+    flex-grow: 3;
+}
+
+.noticias{
+    display: flex;
+    gap: 1vw;
+}
+
+@media (max-width: 1400px) {
+    .noticias{
+        flex-direction: column;
+    }
+    .info-noticias{
+        width: 100%;
+    }
+    .bannersrotativos{
+        width: 100%;
+        flex-grow: 1;
+    }
+    .bannersrotativos .rotativo{
+        min-height: 400px ;
+    }
+    .dev-secao .cards{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:815px){
+
+.navegacao{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+}
+
+.navegacao button{
+    width:100%;
+}
+
+header{
+    flex-direction: column;
+}
+
+}
+
+.bannersrotativos .rotativo {
+    width: 100%;
+    height: 100%;
+    background-image: url(../public/images/pessoas/gabenewell.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.info-noticias{
+    background-color:#1b2838;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.noticias-cards{
+    display: flex;
+    flex-direction: column;
+}
+
+.noticias .cards{
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    border-bottom: solid 1px #c7d5e0;
+}
+.dev-secao h1{
+    word-break: break-word;
+}
+.dev-secao{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.filtros{
+    display: flex;
+    flex-direction: row;
+    background-color:#2a475e;
+}
+
+.dev-secao .cards{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow-x: scroll;
+}
+
+.img-devs{
+    width: 100%;
+}
+
+.footer{
+    background-color:#1b2838;
+}
