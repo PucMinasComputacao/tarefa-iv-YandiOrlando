@@ -82,7 +82,7 @@ button:hover{
     gap: 1vw;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1100px) {
     .noticias{
         flex-direction: column;
     }
